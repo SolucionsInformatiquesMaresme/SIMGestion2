@@ -1,0 +1,5 @@
+Comandos GIT:
+
+git commit -a -m (añade todos los archivos al commit, no es necesario "git add .")
+git remote -v (muestra los repositorios remotos para el envio)
+git push nombre_repositorio (sube los archivos del commit al repositorio indicado)
