@@ -11,12 +11,12 @@ function paletaColors()
 {
 	echo "<table cellpadding=\"1\" cellspacing=\"1\">";
         echo "<tr>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong></strong></td>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong>Nombre</strong></td>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong>RGB</strong></td>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong></strong></td>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong>Nombre</strong></td>";
-          echo "<td style=\"border-bottom: black 2px solid\"><strong>RGB</strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong></strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong>Nombre</strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong>RGB</strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong></strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong>Nombre</strong></td>";
+			echo "<td style=\"border-bottom: black 2px solid\"><strong>RGB</strong></td>";
         echo "</tr>";
         echo "<tr>";
         echo "<tr><td style=\"background: aliceblue\"; width=\"15px\">&nbsp;</td><td>AliceBlue</td><td>#F0F8FF</td><td style=\"background: lightsalmon\"; width=\"15px\">&nbsp;</td><td>LightSalmon</td><td>#FFA07A</td></tr>";
