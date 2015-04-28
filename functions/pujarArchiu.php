@@ -9,6 +9,24 @@ $archivo: archiu a pujar.
 $archivo_name: nom de l'archiu.
 $archivo_size: tamany de l'archiu.
 $archivo_type: tipus d'archiu.
+
+Per obtenir aquest informació cal utilitzar el codi següent :
+
+		if (version_compare(phpversion(), "4.0.0", ">")) {
+			$archivo_name = $_FILES['archivo']['name'];
+			$archivo_size = $_FILES['archivo']['size'];
+			$archivo_type =  $_FILES['archivo']['type'];
+			$archivo = $_FILES['archivo']['tmp_name'];
+			$tipo = $_POST["id_tipo"];
+		}
+		if (version_compare(phpversion(), "4.0.1", "<")) {
+			$archivo_name = $HTTP_POST_FILES['archivo']['name'];
+			$archivo_size = $HTTP_POST_FILES['archivo']['size'];
+			$archivo_type =  $HTTP_POST_FILES['archivo']['type'];
+			$archivo = $HTTP_POST_FILES['archivo']['tmp_name'];
+			$tipo = $HTTP_POST_VARS["id_tipo"];
+		}
+
 */
 
 function pujarArchiu($id_tipo, $archivo, $archivo_name, $archivo_size, $archivo_type) {
