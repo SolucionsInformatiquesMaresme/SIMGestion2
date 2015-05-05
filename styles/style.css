@@ -1,0 +1,170 @@
+/* --- reset de los sstilos de los navegadores ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* --- Fin de reset de los sstilos de los navegadores ---*/
+
+
+body.general {
+	font-size: 15px;
+	font-family: Calibri;
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+}
+
+header, nav, section, article, footer {
+  display: block;
+}
+
+header{
+    height: 141px;
+    position: relative;
+}
+
+section.articulos {
+	padding-top : 20px;
+    width: 900px;
+    float: left;
+}
+
+aside {
+    float: right;
+    margin: 0 10px 0 0;
+    width: 300px;
+    margin: -70px 0 15px 0;
+    padding: 10px;
+}
+
+footer {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-top: 6px solid #4b53af;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+
+/* -- comienzo de los estilos de la navegacion -- */
+
+.menu {
+	border-radius: 0px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+	background: #4B53AF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4B53AF 2%, #c9cbe7 21%, #4B53AF 41%, #3c428c 65%, #2d3169 95%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#4B53AF), color-stop(21%,#c9cbe7), color-stop(41%,#4B53AF), color-stop(65%,#3c428c), color-stop(95%,#2d3169)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4B53AF 2%,#c9cbe7 21%,#4B53AF 41%,#3c428c 65%,#2d3169 95%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4B53AF 2%,#c9cbe7 21%,#4B53AF 41%,#3c428c 65%,#2d3169 95%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4B53AF 2%,#c9cbe7 21%,#4B53AF 41%,#3c428c 65%,#2d3169 95%); /* IE10+ */
+	background: linear-gradient(top,  #4B53AF 2%,#c9cbe7 21%,#4B53AF 41%,#3c428c 65%,#2d3169 95%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4B53AF', endColorstr='#2d3169',GradientType=0 ); /* IE6-9 */
+    height: 35px;
+	margin: 0;
+	display: block;
+}
+
+/* -- fin de los estilos de la navegacion -- */
+.menu, .menu ul, .menu li, .menu a{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 2px;
+    margin: 5px;
+}
+.menu a {
+	display:block;
+	padding: 7px;
+	line-height: 12px;
+	text-decoration: none;
+    text-transform: uppercase;
+
+	font-family: Calibri;
+	font-weight: bold;
+	color: #FFFFFF;
+
+	transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-webkit-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+
+}
+
+.menu li:first-child a {border-left: none;}
+.menu li:last-child a {border-right: none;}
+
+.menu ul{
+	position: absolute;
+	top: 30px;
+	left:0;
+
+	opacity: 0;
+	background: #4B53AF;
+
+	border-radius: 0px 0px 3px 3px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+
+	transition: opacity  .20s ease .1s;
+	-webkit-transition: opacity  .20s ease .1s;
+	-moz-transition: opacity  .20s ease .1s;
+	-o-transition: opacity  .20s ease .1s;
+	-ms-transition: opacity  .20s ease .1s;
+
+}
+
+.menu li:hover > ul { opacity: 1; }
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+.menu li:hover > ul li {
+    height: 35px;
+    overflow: visible;
+    padding: 0;
+}
+.menu ul li a {
+	display:block;
+	padding: 7px;
+	line-height: 12px;
+	text-decoration: none;
+    text-transform: uppercase;
+
+	font-family: Calibri;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.menu ul li:last-child a { border: none; }
+
