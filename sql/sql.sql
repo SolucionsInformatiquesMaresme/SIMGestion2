@@ -41,15 +41,10 @@ ALTER TABLE `sim_articles` ADD `notes` longtext AFTER `id_subgrup` ;
 ALTER TABLE `sim_articles` ADD `descatalogat` tinyint(1) NOT NULL default '0' AFTER `notes` ;
 ALTER TABLE `sim_articles` ADD `preu` decimal(11,3) NOT NULL default '0' AFTER `descatalogat` ;
 ALTER TABLE `sim_articles` ADD `id_divisa` int(11) NOT NULL default '0' AFTER `preu` ;
-ALTER TABLE `sim_articles` ADD `img1` varchar(100) NOT NULL default '' AFTER `id_divisa` ;
-ALTER TABLE `sim_articles` ADD `img2` varchar(100) NOT NULL default '' AFTER `img1` ;
-ALTER TABLE `sim_articles` ADD `img3` varchar(100) NOT NULL default '' AFTER `img2` ;
-ALTER TABLE `sim_articles` ADD `escandall` tinyint(1) NOT NULL default '0' AFTER `img3` ;
+ALTER TABLE `sim_articles` ADD `escandall` tinyint(1) NOT NULL default '0' AFTER `id_divisa` ;
 ALTER TABLE `sim_articles` ADD `recalc_escandall` tinyint(1) NOT NULL default '0' AFTER `escandall` ;
 ALTER TABLE `sim_articles` ADD `data` date NOT NULL default '0000-00-00' AFTER `recalc_escandall` ;
-ALTER TABLE `sim_articles` ADD `stock_min` int(11) NOT NULL default '0' AFTER `data` ;
-ALTER TABLE `sim_articles` ADD `stock_max` int(11) NOT NULL default '0' AFTER `stock_min` ;
-ALTER TABLE `sim_articles` ADD `percentatge` int(11) NOT NULL default '0' AFTER `stock_max` ;
+ALTER TABLE `sim_articles` ADD `percentatge` int(11) NOT NULL default '0' AFTER `data` ;
 
 CREATE TABLE `sim_articles_escandall` ( `id` int(11) NOT NULL auto_increment,  PRIMARY KEY  (`id`) );
 ALTER TABLE `sim_articles_escandall` ADD `id_escandall` int(11) NOT NULL default '0' AFTER `id` ;
